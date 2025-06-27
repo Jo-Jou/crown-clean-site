@@ -8,12 +8,10 @@
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background-image: url('background.jpg');
-      background-size: cover;
-      background-attachment: fixed;
-      background-position: center;
+      background-color: #fff8f0;
       color: #333;
     }
+
     header {
       background-image: url('photo3.jpg');
       background-size: cover;
@@ -22,78 +20,102 @@
       padding: 30px 20px;
       text-align: center;
     }
+
     header img {
-      width: 600px;
+      max-width: 600px;
       height: 250px;
       object-fit: contain;
       display: block;
       margin: 0 auto 10px;
+      border-radius: 15px;
     }
-    header h1 {
-      margin: 10px 0 5px;
-      font-size: 2.5em;
-      text-shadow: 1px 1px 2px #000;
+
+    header p {
+      background-color: rgba(255, 255, 255, 0.8);
+      display: inline-block;
+      padding: 10px 15px;
+      color: #800000;
+      border-radius: 10px;
+      margin-top: 10px;
+      font-weight: bold;
     }
+
     nav {
-      background-color: #a52a2acc;
+      background-color: #a52a2a;
       padding: 10px;
       text-align: center;
     }
+
     nav a {
       color: gold;
       text-decoration: none;
       margin: 0 15px;
       font-weight: bold;
     }
+
     nav a:hover {
       text-decoration: underline;
     }
+
     section {
-      background-color: rgba(255, 255, 255, 0.9);
+      background-color: #f9f9f9;
       padding: 30px 20px;
       max-width: 900px;
-      margin: 30px auto;
+      margin: 20px auto;
       border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     }
+
     section h2 {
       color: #800000;
     }
+
     ul {
       list-style-type: square;
       padding-left: 20px;
     }
-    .service-photos {
+
+    .service-images {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
+      flex-wrap: wrap;
       gap: 20px;
       margin-top: 20px;
     }
-    .service-photos img {
-      width: 100%;
+
+    .service-images img {
       max-width: 400px;
-      height: auto;
+      width: 100%;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
+
     footer {
-      background-color: #800000cc;
+      background-color: #800000;
       color: gold;
       text-align: center;
       padding: 15px;
       margin-top: 30px;
     }
+
     @media (max-width: 650px) {
       header img {
         width: 100%;
         height: auto;
       }
+
       header h1 {
         font-size: 1.8em;
       }
+
       nav a {
         display: block;
         margin: 10px 0;
+      }
+
+      .service-images {
+        flex-direction: column;
+        align-items: center;
       }
     }
   </style>
@@ -115,7 +137,7 @@
     <h2>Σχετικά με εμάς</h2>
     <p>
       Η <strong>Crown Clean</strong> είναι μια εξειδικευμένη εταιρεία
-      καθαρισμού με έδρα τη Νέα Σμύρνη. Προσφέρουμε αξιόπιστες και
+      καθαρισμού με έδρα την Καλλιθέα. Προσφέρουμε αξιόπιστες και
       επαγγελματικές υπηρεσίες καθαρισμού πολυκατοικιών και γραφείων. Με σεβασμό
       στον χώρο και τον χρόνο σας, διασφαλίζουμε ένα καθαρό και υγιεινό
       περιβάλλον για όλους.
@@ -132,7 +154,7 @@
       <li>Απολυμάνσεις & υγειονομική φροντίδα</li>
     </ul>
 
-    <div class="service-photos">
+    <div class="service-images">
       <img src="photo1.jpg" alt="Υπηρεσία 1" />
       <img src="photo2.jpg" alt="Υπηρεσία 2" />
     </div>
@@ -140,11 +162,11 @@
 
   <section id="contact">
     <h2>Επικοινωνία</h2>
-    <p><strong>📍 Διεύθυνση:</strong> Αγίων Πάντων 54</p>
-    <p><strong>📞 Τηλέφωνο:</strong> <a href="tel:6983729171">6983729171</a></p>
+    <p><strong>📍 Διεύθυνση:</strong> Αγίων Πάντων 54, Καλλιθέα 17671</p>
+    <p><strong>📞 Τηλέφωνο:</strong> <a href="tel:6983739171">6983739171</a></p>
     <p>
       <strong>✉️ Email:</strong>
-      <a href="mailto:Crownclean@outlook.com.gr">Crownclean@outlook.com.gr</a>
+      <a href="mailto:info@crownclean.gr">info@crownclean.gr</a>
     </p>
   </section>
 
@@ -153,6 +175,5 @@
   </footer>
 </body>
 </html>
-
 
 
