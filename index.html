@@ -8,12 +8,16 @@
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background: url('background.jpg') no-repeat center center fixed;
+      background-image: url('background.jpg');
       background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
       color: #333;
     }
     header {
-      background-color: rgba(128, 0, 0, 0.85);
+      background-image: url('photo3.jpg');
+      background-size: cover;
+      background-position: center;
       color: gold;
       padding: 30px 20px;
       text-align: center;
@@ -28,9 +32,10 @@
     header h1 {
       margin: 10px 0 5px;
       font-size: 2.5em;
+      text-shadow: 1px 1px 2px #000;
     }
     nav {
-      background-color: rgba(165, 42, 42, 0.9);
+      background-color: #a52a2acc;
       padding: 10px;
       text-align: center;
     }
@@ -44,11 +49,11 @@
       text-decoration: underline;
     }
     section {
+      background-color: rgba(255, 255, 255, 0.9);
       padding: 30px 20px;
       max-width: 900px;
-      margin: auto;
-      background-color: rgba(255, 255, 255, 0.9);
-      border-radius: 12px;
+      margin: 30px auto;
+      border-radius: 10px;
     }
     section h2 {
       color: #800000;
@@ -57,21 +62,22 @@
       list-style-type: square;
       padding-left: 20px;
     }
-    .service-images {
+    .service-photos {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      gap: 20px;
       margin-top: 20px;
     }
-    .service-images img {
-      width: 45%;
+    .service-photos img {
+      width: 100%;
       max-width: 400px;
-      margin: 10px;
+      height: auto;
       border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
     }
     footer {
-      background-color: rgba(128, 0, 0, 0.85);
+      background-color: #800000cc;
       color: gold;
       text-align: center;
       padding: 15px;
@@ -88,9 +94,6 @@
       nav a {
         display: block;
         margin: 10px 0;
-      }
-      .service-images img {
-        width: 90%;
       }
     }
   </style>
@@ -111,9 +114,11 @@
   <section id="about">
     <h2>Σχετικά με εμάς</h2>
     <p>
-      Η <strong>Crown Clean</strong> είναι μια εξειδικευμένη εταιρεία καθαρισμού με έδρα τη Νέα Σμύρνη.
-      Προσφέρουμε αξιόπιστες και επαγγελματικές υπηρεσίες καθαρισμού πολυκατοικιών και γραφείων.
-      Με σεβασμό στον χώρο και τον χρόνο σας, διασφαλίζουμε ένα καθαρό και υγιεινό περιβάλλον για όλους.
+      Η <strong>Crown Clean</strong> είναι μια εξειδικευμένη εταιρεία
+      καθαρισμού με έδρα τη Νέα Σμύρνη. Προσφέρουμε αξιόπιστες και
+      επαγγελματικές υπηρεσίες καθαρισμού πολυκατοικιών και γραφείων. Με σεβασμό
+      στον χώρο και τον χρόνο σας, διασφαλίζουμε ένα καθαρό και υγιεινό
+      περιβάλλον για όλους.
     </p>
   </section>
 
@@ -126,9 +131,10 @@
       <li>Περιοδικός και εβδομαδιαίος καθαρισμός</li>
       <li>Απολυμάνσεις & υγειονομική φροντίδα</li>
     </ul>
-    <div class="service-images">
-      <img src="1.jpg" alt="Υπηρεσία καθαρισμού 1" />
-      <img src="2.jpg" alt="Υπηρεσία καθαρισμού 2" />
+
+    <div class="service-photos">
+      <img src="photo1.jpg" alt="Υπηρεσία 1" />
+      <img src="photo2.jpg" alt="Υπηρεσία 2" />
     </div>
   </section>
 
@@ -136,7 +142,10 @@
     <h2>Επικοινωνία</h2>
     <p><strong>📍 Διεύθυνση:</strong> Αγίων Πάντων 54</p>
     <p><strong>📞 Τηλέφωνο:</strong> <a href="tel:6983729171">6983729171</a></p>
-    <p><strong>✉️ Email:</strong> <a href="mailto:Crownclean@outlook.com.gr">Crownclean@outlook.com.gr</a></p>
+    <p>
+      <strong>✉️ Email:</strong>
+      <a href="mailto:Crownclean@outlook.com.gr">Crownclean@outlook.com.gr</a>
+    </p>
   </section>
 
   <footer>
@@ -144,4 +153,6 @@
   </footer>
 </body>
 </html>
+
+
 
