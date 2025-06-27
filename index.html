@@ -16,11 +16,32 @@
       background-image: url('photo3.jpg');
       background-size: cover;
       background-position: center;
-      padding: 30px 20px;
+      padding: 30px 20px 50px 20px;
       text-align: center;
       border-radius: 0 0 15px 15px;
+      position: relative;
     }
 
+    /* Πλαίσιο στον τίτλο, κεντραρισμένο πάνω */
+    header h1 {
+      display: inline-block;
+      background-color: gold; /* χρώμα όπως τα links */
+      color: #800000; /* μπορντό για το κείμενο */
+      font-weight: bold;
+      font-size: 2.5em;
+      padding: 10px 25px;
+      border-radius: 15px;
+      margin: 0 auto 20px auto;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+      position: relative;
+      z-index: 2;
+      background-image: none; /* χωρίς gradient τώρα */
+      -webkit-background-clip: initial;
+      -webkit-text-fill-color: initial;
+      text-shadow: none;
+    }
+
+    /* Λογότυπο με καμπύλες */
     header img {
       max-width: 600px;
       height: 250px;
@@ -28,32 +49,11 @@
       display: block;
       margin: 0 auto 10px;
       border-radius: 15px;
+      position: relative;
+      z-index: 1;
     }
 
-    header h1 {
-      margin: 10px 0 5px;
-      font-size: 2.5em;
-      font-weight: bold;
-      color: #800000; /* αρχικό μπορντό */
-      background: linear-gradient(90deg, #800000 0%, #a52a2a 50%, #800000 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-size: 200% 100%;
-      animation: shine 3s infinite alternate;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-      display: inline-block;
-    }
-
-    @keyframes shine {
-      0% {
-        background-position: 0% 0%;
-      }
-      100% {
-        background-position: 100% 0%;
-      }
-    }
-
-    /* Πλαίσιο γύρω από το κείμενο κάτω από το λογότυπο */
+    /* Πλαίσιο κάτω από το λογότυπο */
     header p {
       display: inline-block;
       background-color: rgba(255, 255, 255, 0.85);
@@ -63,6 +63,8 @@
       font-weight: bold;
       color: #800000;
       margin-top: 0;
+      position: relative;
+      z-index: 2;
     }
 
     nav {
@@ -135,6 +137,7 @@
       }
       header h1 {
         font-size: 1.8em;
+        padding: 8px 15px;
       }
       nav a {
         display: block;
@@ -156,8 +159,8 @@
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Crown Clean logo" />
     <h1>Crown Clean</h1>
+    <img src="logo.png" alt="Crown Clean logo" />
     <p>Καθαριότητα με βασιλική ποιότητα</p>
   </header>
 
