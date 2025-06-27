@@ -30,24 +30,39 @@
       border-radius: 15px;
     }
 
-    /* Τίτλος με αρχικό μπορντό χρώμα και το animation που θέλαμε */
     header h1 {
       margin: 10px 0 5px;
       font-size: 2.5em;
       font-weight: bold;
-      background: linear-gradient(90deg, #800000, #a52a2a);
+      color: #800000; /* αρχικό μπορντό */
+      background: linear-gradient(90deg, #800000 0%, #a52a2a 50%, #800000 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      animation: colorShift 3s infinite alternate;
+      background-size: 200% 100%;
+      animation: shine 3s infinite alternate;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+      display: inline-block;
     }
 
-    @keyframes colorShift {
+    @keyframes shine {
       0% {
-        background-position: 0% 50%;
+        background-position: 0% 0%;
       }
       100% {
-        background-position: 100% 50%;
+        background-position: 100% 0%;
       }
+    }
+
+    /* Πλαίσιο γύρω από το κείμενο κάτω από το λογότυπο */
+    header p {
+      display: inline-block;
+      background-color: rgba(255, 255, 255, 0.85);
+      border: 2px solid #800000;
+      padding: 8px 15px;
+      border-radius: 8px;
+      font-weight: bold;
+      color: #800000;
+      margin-top: 0;
     }
 
     nav {
@@ -132,6 +147,9 @@
       }
       #contact p {
         max-width: 90%;
+      }
+      header p {
+        font-size: 0.9em;
       }
     }
   </style>
